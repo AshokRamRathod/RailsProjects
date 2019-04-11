@@ -1,0 +1,13 @@
+<h1>Add a New Post </h1>
+
+<%= form_for @post do |f|%>
+<p><%= f.label :title %><br />
+   <%= f.text_field :title, placeholder: "title name..", required: true%>
+</p>
+<p><%= f.label :content %><br />
+   <%= f.text_area :content, placeholder: "Content..", required: true%>
+</p>
+<p><%= f.submit "Add New Post" %>
+   
+</p>
+<%end%>
